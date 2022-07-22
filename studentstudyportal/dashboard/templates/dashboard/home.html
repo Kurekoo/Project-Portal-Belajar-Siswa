@@ -1,0 +1,96 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+
+<section class="container text-center">
+  <h3>Selamat Datang di Portal Belajar</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Catatan
+            </h5>
+            Buatlah catatan untuk suatu hal yang penting, ini akan bersifat permanen sebelum kamu menghapusnya.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Tugas
+            </h5>
+            Tambahkan tugasmu ke daftar tugas sekarang juga! Kamu juga bisa menentukan deadline yang sesuai. 
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'youtube' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Youtube
+            </h5>
+            Gunakan Youtube untuk belajar atau hanya untuk sekedar hiburan saat bersantai. 
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Jadwal Kegiatan
+            </h5>
+            Buatlah jadwal kegiatan agar kamu bisa mengatur waktu dengan baik.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'dictionary' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              English Dictionary
+            </h5>
+            Kamus untuk mencari arti dari suatu kosa kata dalam bahasa inggris.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'wiki' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki1.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Wikipedia
+            </h5>
+            Kesulitan dalam mengerjakan tugas? Wikipedia akan membantumu dengan baik.
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+</section>
+{% endblock content %}
